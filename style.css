@@ -33,7 +33,7 @@
 .tag h1 {
     width:341px;
     font-size:7em;
-    letter-spacing:-10px;
+    letter-spacing:-5px;
     font-weight:800;
     line-height:75%;
     font-family: "Raleway", sans-serif;
@@ -73,4 +73,48 @@
     margin:auto;
     margin-top:20px;
     margin-bottom:40px;
+}
+
+.articles-bg {
+    background-color:#FDFDFE;
+}
+
+.articles-bg h3 {
+    padding-top:30px;
+    padding-bottom:30px;
+    font-family: "Raleway", sans-serif;
+    font-weight:800;
+}
+
+.article-title {
+    font-size:1.4em;
+    font-family: "Raleway", sans-serif;
+    font-weight:800;
+    padding-top:20px;
+    margin-bottom:0px;
+}
+
+.article-date {
+    font-style:italic;
+    font-size:0.8em;
+    text-align:left;
+}
+
+.read-more {
+    display:block;
+    color:#848181;
+    font-size:0.9em;
+    margin-bottom:30px;
+}
+
+footer {
+    background-image:url(images/footer_image.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+
+footer p {
+    color:#FFFFFF;
+    font-weight:bold;
+    padding:5%;
 }
