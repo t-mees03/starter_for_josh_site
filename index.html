@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Josh Whitkin is a game and level designer, this is his personal website.">
@@ -13,7 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Josh Website Starter</title>
+    <title><?php
+      if (function_exists('is_tag') && is_tag()) {
+         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+      elseif (is_archive()) {
+         wp_title(''); echo ' Archive - '; }
+      elseif (is_search()) {
+         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+      elseif (!(is_404()) && (is_single()) || (is_page())) {
+         wp_title(''); echo ' - '; }
+      elseif (is_404()) {
+         echo 'Not Found - '; }
+      if (is_home()) {
+         bloginfo('name'); echo ' - '; bloginfo('description'); }
+      else {
+          bloginfo('name'); }
+      if ($paged>1) {
+         echo ' - page '. $paged; }
+   ?>
+</title>
+<meta name="description" content="<?php bloginfo('description'); ?>">
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+
 </head>
 <body>
 
@@ -52,7 +73,10 @@
     <h1>Games Design for the future</h1>
   </div> <!-- tag --> 
 
-    </div> <!-- container --> 
+    </div> <!-- container -->
+    <?php wp_head(); ?>
+    <!-- very important that this code is added-->
+ 
     </header>
 
     <section class="container-fluid about-bg text-center">
