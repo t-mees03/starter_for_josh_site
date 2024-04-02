@@ -21,10 +21,7 @@
             <h3 class="text-center"><?php the_field('titleforarticles'); ?></h3>
             <div class="row">
                     <div class="col-md-4">
-                    <?php
-                    $image = get_field('articleimage');
-                    ?>
-                    <img class="img-fluid" src="<?php echo esc_url($image['images/article_image_1.jpg']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                    <img class="img-fluid" src="<?php the_field('articleimage'); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                     <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
                     <p class="article-date"><?php the_field('articledate'); ?></p>
                     <p class="article-p"><?php the_field('articleexcerpt'); ?></p>
