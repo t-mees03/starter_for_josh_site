@@ -28,26 +28,18 @@
                     <a href="<?php the_field('readmore'); ?>" class="read-more">CONTINUE READING</a>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid" src="http://170.187.231.66/~mesh14/wp-content/themes/starter_for_josh_site/images/article_image_2.jpg" alt="3D renders of a sci-fi character model.">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="article-date">Friday, November 10, 2030</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of  investigation. More and  more  STS 
-                        scholars are  starting to explore and intervene in the arts.  This object of study  
-                        brings  new challenges and  opportunities that we want  to explore in this session.   
-                        We would  like to gather first of all simply  new kinds of  knowledge arising from  STS 
-                        study  of the arts.</p>
-                        <a class="read-more" href="#">CONTINUE READING</a>
+                    <img class="img-fluid" src="<?php the_field('articleimage2'); ?>" alt="3D renders of a sci-fi character model.">
+                    <h4 class="article-title"><?php the_field('articletitle2'); ?></h4>
+                    <p class="article-date"><?php the_field('articledate2'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt2'); ?></p>
+                    <a href="<?php the_field('readmore2'); ?>" class="read-more">CONTINUE READING</a>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid" src="http://170.187.231.66/~mesh14/wp-content/themes/starter_for_josh_site/images/article_image_3.jpg" alt="Top down perspective of a pixelated race track.">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="article-date">Friday, November 10, 2030</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of  investigation. More and  more  STS 
-                        scholars are  starting to explore and intervene in the arts.  This object of study  
-                        brings  new challenges and  opportunities that we want  to explore in this session.   
-                        We would  like to gather first of all simply  new kinds of  knowledge arising from  STS 
-                        study  of the arts.</p>
-                        <a class="read-more" href="#">CONTINUE READING</a>
+                    <img class="img-fluid" src="<?php the_field('articleimage3'); ?>" alt="Top down perspective of a pixelated race track.">
+                    <h4 class="article-title"><?php the_field('articletitle3'); ?></h4>
+                    <p class="article-date"><?php the_field('articledate3'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt3'); ?></p>
+                    <a href="<?php the_field('readmore3'); ?>" class="read-more">CONTINUE READING</a>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
