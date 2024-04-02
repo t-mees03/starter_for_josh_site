@@ -28,7 +28,7 @@
                     <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
                     <p class="article-date"><?php the_field('articledate'); ?></p>
                     <p class="article-p"><?php the_field('articleexcerpt'); ?></p>
-                    <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
+                    <a href="<?php the_field('readmore'); ?>" class="read-more">CONTINUE READING</a>
                 </div>
                 <div class="col-md-4">
                     <img class="img-fluid" src="http://170.187.231.66/~mesh14/wp-content/themes/starter_for_josh_site/images/article_image_2.jpg" alt="3D renders of a sci-fi character model.">
