@@ -36,7 +36,7 @@
 </head>
 <body>
 
-<header class="container-fluid small-bg">
+<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
     <div class="container">
     
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -68,7 +68,7 @@
       </nav>
 
   <div class="small-tag">
-    <h1 class="small-tag-title">Projects</h1>
+    <h1 class="small-tag-title"><?php the_field('projectsheadertitle'); ?> </h1>
   </div> <!-- tag --> 
 
     </div> <!-- container -->
