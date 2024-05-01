@@ -41,7 +41,8 @@
     
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><span class="josh">JOSH</span> <span class="orange">WHITKIN</span></a>
+        <!-- <a class="navbar-brand" href="#"><span class="josh">JOSH</span> <span class="orange">WHITKIN</span></a> -->
+        <a class="navbar-brand" href="#"><lottie-player src="http://170.187.231.66/~mesh14/wp-content/themes/starter_for_josh_site/images/logo_anim.json" background="transparent" speed="1" style="width: 200px; height: 70px" direction="1" mode="normal" autoplay></lottie-player></a>
       
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
